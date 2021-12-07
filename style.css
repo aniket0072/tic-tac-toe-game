@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto:wght@500&display=swap');
+*{
+margin: 0;
+ padding: 0;
+}
+
+nav{
+background-color: #4d0039;
+height: 30px;
+margin: 0;
+padding: 5px;
+padding-top: 10px;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+align-items: center;
+}
+li{
+  list-style: none;
+}
+
+.container{
+  display: flex; 
+  margin: 40px 2px;
+  justify-content: center;
+}
+.grid{
+  display: grid;
+  grid-template-rows: repeat(3,10vw);
+  grid-template-columns:repeat(3,10vw) ;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+.box{
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+border: 2px solid black;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box:hover{
+  background-color: rgb(235, 222, 247);
+}
+.gameinfo{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  padding: 3vw;
+}
+.imgbox img{
+  width: 0;
+   transition: width 1s ease-in-out; 
+}
+.br0{
+  border-right: 0;
+}
+.bl0{border-left: 0;
+}
+.bt0{
+  border-top: 0;
+}
+.bb0{
+  border-bottom: 0;
+}
+.turninfo{
+  font-size: 18px;
+}
+.line{
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background-color: rgb(116, 18, 207);
+  transition: width 1s ease-in-out;
+}
+#reset{
+  font-size: 18px;
+  padding: 0px 3px;
+  margin: 8px;
+  background-color: rgb(236, 234, 250);
+  border-radius: .3em;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#reset:hover{
+  background-color: rgb(200, 195, 231);
+}
+
+@media screen and (max-width: 950px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .info h1{
+        font-size: 1.5rem;
+    }
+    .grid { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
