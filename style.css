@@ -100,4 +100,7 @@ justify-content: center;
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
     }
+   .line{
+      display: none;
+    }
 }
